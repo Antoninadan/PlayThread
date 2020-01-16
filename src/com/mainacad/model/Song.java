@@ -34,4 +34,9 @@ public class Song {
     public void setDurationSeconds(Integer durationSeconds) {
         this.durationSeconds = durationSeconds;
     }
+
+    @Override
+    public String toString() {
+        return  name + " - " + author + " - " + durationSeconds + "(s)";
+    }
 }

@@ -4,8 +4,7 @@ import com.mainacad.model.Song;
 import com.mainacad.thread.Iterruptor;
 import com.mainacad.thread.SongStarter;
 
-import java.util.concurrent.TimeUnit;
-
+// DONT USE
 public class Player {
 
     public static void work(Song song) {
@@ -21,6 +20,7 @@ public class Player {
         songStarter.interrupt();
         iterruptor.interrupt();
 
-        System.out.println("Call main menu");
+        Menu menu = new Menu();
+        menu.work();
     }
 }

@@ -11,8 +11,6 @@ public class SongStarter extends Thread{
 
     @Override
     public void run() {
-        System.out.println(song.getName() + "  " + song.getAuthor());
-
         ThreadStopper threadStopper = new ThreadStopper(this, song.getDurationSeconds());
         threadStopper.run();
     }
